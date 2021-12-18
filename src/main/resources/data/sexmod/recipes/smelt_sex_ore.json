@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "sexmod:sex_ore"
+  },
+  "result": "sexmod:sexnugget",
+  "experience": 69,
+  "cookingtime": 200
+}
