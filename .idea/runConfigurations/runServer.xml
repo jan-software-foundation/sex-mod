@@ -7,7 +7,7 @@
     <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run"/>
     <module name="sex-mod.main"/>
     <envs>
-      <env name="MOD_CLASSES" value="examplemod%%$PROJECT_DIR$/build/resources/main:examplemod%%$PROJECT_DIR$/build/classes/java/main"/>
+      <env name="MOD_CLASSES" value="sexmod%%$PROJECT_DIR$/build/resources/main:sexmod%%$PROJECT_DIR$/build/classes/java/main"/>
       <env name="MCP_MAPPINGS" value="official_1.16.5"/>
       <env name="MCP_VERSION" value="20210115.111550"/>
       <env name="FORGE_VERSION" value="36.2.22"/>

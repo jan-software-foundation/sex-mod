@@ -2,6 +2,7 @@ package com.janderedev.sexmod.blocks;
 
 
 import net.minecraft.block.AbstractBlock;
+import net.minecraft.block.BlockState;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
@@ -16,7 +17,8 @@ public class SexOre extends BlockBase {
                         .strength(5.0f, 6.0f)
                         .sound(SoundType.STONE)
                         .harvestLevel(3)
-                        .harvestTool(ToolType.PICKAXE),
+                        .harvestTool(ToolType.PICKAXE)
+                        .lightLevel((BlockState state) -> 6),
                 new Item.Properties().tab(ItemGroup.TAB_BUILDING_BLOCKS)
         );
     }
