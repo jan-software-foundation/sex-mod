@@ -1,6 +1,6 @@
 package com.janderedev.sexmod.items;
 
-import com.janderedev.sexmod.RegistryHandler;
+import com.janderedev.sexmod.init.RegistryHandler;
 import net.minecraft.item.Item;
 
 public class ItemBase extends Item {

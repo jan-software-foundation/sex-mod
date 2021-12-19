@@ -1,5 +1,6 @@
 package com.janderedev.sexmod;
 
+import com.janderedev.sexmod.init.RegistryHandler;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;

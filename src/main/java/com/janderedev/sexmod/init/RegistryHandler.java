@@ -1,5 +1,6 @@
-package com.janderedev.sexmod;
+package com.janderedev.sexmod.init;
 
+import com.janderedev.sexmod.SexMod;
 import com.janderedev.sexmod.blocks.SexBlock;
 import com.janderedev.sexmod.blocks.SexOre;
 import com.janderedev.sexmod.items.SexNugget;

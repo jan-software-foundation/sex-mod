@@ -1,0 +1,20 @@
+{
+  "onii_chan": {
+    "category" : "blocks",
+    "sounds": [
+      {
+        "name": "sexmod:onii_chan",
+        "stream": false
+      }
+    ]
+  },
+  "nyaa": {
+    "category": "blocks",
+    "sounds": [
+      {
+        "name": "sexmod:nya",
+        "stream": false
+      }
+    ]
+  }
+}
