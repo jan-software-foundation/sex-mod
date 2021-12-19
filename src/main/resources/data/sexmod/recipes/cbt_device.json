@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "x x",
+    " o ",
+    " s "
+  ],
+  "key": {
+    "x": {
+      "item": "sexmod:sex_block"
+    },
+    "o": {
+      "item": "sexmod:sexnugget"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "sexmod:cbt_device",
+    "count": 1
+  }
+}
