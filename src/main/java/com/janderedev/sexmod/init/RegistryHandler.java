@@ -3,6 +3,7 @@ package com.janderedev.sexmod.init;
 import com.janderedev.sexmod.SexMod;
 import com.janderedev.sexmod.blocks.SexBlock;
 import com.janderedev.sexmod.blocks.SexOre;
+import com.janderedev.sexmod.items.CBTDevice;
 import com.janderedev.sexmod.items.SexNugget;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -26,6 +27,7 @@ public class RegistryHandler {
     }
 
     public static final Item ITEM_SEXNUGGET = new SexNugget();
+    public static final Item ITEM_CBTDEVICE = new CBTDevice();
 
     public static final Block BLOCK_SEX_ORE = new SexOre();
     public static final Block BLOCK_SEX = new SexBlock();

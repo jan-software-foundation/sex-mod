@@ -1,5 +1,9 @@
 {
   "item.sexmod.sexnugget": "Sex Nugget",
+  "item.sexmod.cbt_device": "CBT Device",
   "block.sexmod.sex_ore": "Sex Ore",
-  "block.sexmod.sex_block": "Block of Sex"
+  "block.sexmod.sex_block": "Block of Sex",
+  "tooltip.sexmod.cbt_device": "§8Does enormous damage to your enemies balls! Single use.§r",
+  "death.attack.cbt": "%1$s's cock and balls ruptured",
+  "death.attack.cbt.player": "%1$s got their cock and balls ruptured by %2$s"
 }
