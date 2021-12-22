@@ -1,15 +1,14 @@
 package com.janderedev.sexmod.items;
 
-import com.janderedev.sexmod.SexMod;
+import com.janderedev.sexmod.init.RegistryHandler;
+
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.DamageSource;
-import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundCategory;
-import net.minecraft.util.SoundEvent;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.World;
@@ -25,8 +24,8 @@ public class CBTDevice extends ItemBase {
     }
 
     @Override
-    public void appendHoverText(ItemStack p_77624_1_, @Nullable World p_77624_2_, List<ITextComponent> tooltip, ITooltipFlag p_77624_4_) {
-        super.appendHoverText(p_77624_1_, p_77624_2_, tooltip, p_77624_4_);
+    public void appendHoverText(ItemStack stack, @Nullable World world, List<ITextComponent> tooltip, ITooltipFlag flag) {
+        super.appendHoverText(stack, world, tooltip, flag);
         tooltip.add(new TranslationTextComponent("tooltip.sexmod.cbt_device"));
     }
 
@@ -36,9 +35,8 @@ public class CBTDevice extends ItemBase {
 
         stack.setCount(0);
 
-        player.getCommandSenderWorld().playSound(null, player.blockPosition(), new SoundEvent(
-                new ResourceLocation(SexMod.MODID, "cbt")
-        ), SoundCategory.PLAYERS, 1.0f, 1.0f);
+        player.getCommandSenderWorld().playSound(null, player.blockPosition(),
+            RegistryHandler.SOUND_CBT, SoundCategory.PLAYERS, 1.0f, 1.0f);
         return false;
     }
 }

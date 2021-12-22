@@ -1,6 +1,7 @@
 package com.janderedev.sexmod.blocks;
 
-import com.janderedev.sexmod.SexMod;
+import com.janderedev.sexmod.init.RegistryHandler;
+
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.SoundType;
@@ -36,25 +37,22 @@ public class SexBlock extends BlockBase {
     @Override
     public void stepOn(World world, BlockPos blockPos, Entity entity) {
         super.stepOn(world, blockPos, entity);
+        if (!world.isClientSide()) {
+            Date date = new Date();
+            long time = date.getTime();
 
-        Date date = new Date();
-        long time = date.getTime();
-
-        if (time > lastOniiChan + 1000) {
-            lastOniiChan = time;
-            world.playSound(null, blockPos, new SoundEvent(
-                    new ResourceLocation(SexMod.MODID, "onii_chan")
-            ), SoundCategory.BLOCKS, 1.0f, 1.0f);
+            if (time > lastOniiChan + 1000) {
+                lastOniiChan = time;
+                world.playSound(null, blockPos, RegistryHandler.SOUND_ONIICHAN, SoundCategory.BLOCKS, 1.0f, 1.0f);
+            }
         }
     }
 
     // why is this deprecated
     @Override
-    public ActionResultType use(BlockState p_225533_1_, World world, BlockPos blockPos,
-                                PlayerEntity player, Hand p_225533_5_, BlockRayTraceResult p_225533_6_) {
-        world.playSound(null, blockPos, new SoundEvent(
-                new ResourceLocation(SexMod.MODID, "nyaa")
-        ), SoundCategory.BLOCKS, 1.0f, 1.0f);
+    public ActionResultType use(BlockState state, World world, BlockPos blockPos,
+                                PlayerEntity player, Hand hand, BlockRayTraceResult hit) {
+        world.playSound(player, blockPos, RegistryHandler.SOUND_NYAA, SoundCategory.BLOCKS, 1.0f, 1.0f);
 
         ActionResultType result = ActionResultType.SUCCESS;
         result.shouldSwing();
