@@ -19,7 +19,10 @@ import net.minecraftforge.common.ToolType;
 import java.util.Date;
 
 public class SexBlock extends BlockBase {
-    private long lastOniiChan = 0;
+    private static final int ONIICHAN_LOWER = 1500;
+    private static final int ONIICHAN_UPPER = 5000;
+
+    private long nextOniiChan = 0;
 
     public SexBlock() {
         super(
@@ -41,8 +44,8 @@ public class SexBlock extends BlockBase {
             Date date = new Date();
             long time = date.getTime();
 
-            if (time > lastOniiChan + 1000) {
-                lastOniiChan = time;
+            if (time > nextOniiChan) {
+                nextOniiChan = time + ONIICHAN_LOWER + world.getRandom().nextInt(ONIICHAN_UPPER - ONIICHAN_LOWER);
                 world.playSound(null, blockPos, RegistryHandler.SOUND_ONIICHAN, SoundCategory.BLOCKS, 1.0f, 1.0f);
             }
         }
