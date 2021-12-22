@@ -2,7 +2,6 @@ package com.janderedev.sexmod.items;
 
 import com.janderedev.sexmod.SexMod;
 import net.minecraft.client.util.ITooltipFlag;
-import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;

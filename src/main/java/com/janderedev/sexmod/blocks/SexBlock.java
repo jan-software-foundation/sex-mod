@@ -1,6 +1,5 @@
 package com.janderedev.sexmod.blocks;
 
-
 import com.janderedev.sexmod.SexMod;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.BlockState;
@@ -13,14 +12,10 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.util.*;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.BlockRayTraceResult;
-import net.minecraft.world.Explosion;
-import net.minecraft.world.IBlockReader;
 import net.minecraft.world.World;
-import net.minecraft.world.server.ServerWorld;
 import net.minecraftforge.common.ToolType;
 
 import java.util.Date;
-import java.util.Random;
 
 public class SexBlock extends BlockBase {
     private long lastOniiChan = 0;
