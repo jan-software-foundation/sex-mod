@@ -1,10 +1,10 @@
-package com.janderedev.sexmod.world;
+package xyz.janderedev.sexmod.world;
 
-import com.janderedev.sexmod.SexMod;
-import com.janderedev.sexmod.world.gen.WorldGen;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import xyz.janderedev.sexmod.SexMod;
+import xyz.janderedev.sexmod.world.gen.WorldGen;
 
 @Mod.EventBusSubscriber(modid = SexMod.MODID)
 public class WorldEvents {

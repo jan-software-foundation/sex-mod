@@ -1,7 +1,7 @@
-package com.janderedev.sexmod.world.gen;
+package xyz.janderedev.sexmod.world.gen;
 
-import com.janderedev.sexmod.init.RegistryHandler;
 import net.minecraft.block.Block;
+import xyz.janderedev.sexmod.init.RegistryHandler;
 
 public enum OreType {
     SEX_ORE(RegistryHandler.BLOCK_SEX_ORE, 8, 0, 64);

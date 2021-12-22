@@ -1,4 +1,4 @@
-package com.janderedev.sexmod.world.gen;
+package xyz.janderedev.sexmod.world.gen;
 
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.registry.WorldGenRegistries;

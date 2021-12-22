@@ -1,4 +1,4 @@
-package com.janderedev.sexmod.items;
+package xyz.janderedev.sexmod.items;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;

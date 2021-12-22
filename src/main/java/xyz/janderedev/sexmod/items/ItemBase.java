@@ -1,7 +1,7 @@
-package com.janderedev.sexmod.items;
+package xyz.janderedev.sexmod.items;
 
-import com.janderedev.sexmod.init.RegistryHandler;
 import net.minecraft.item.Item;
+import xyz.janderedev.sexmod.init.RegistryHandler;
 
 public class ItemBase extends Item {
     public ItemBase(String id, Item.Properties props) {

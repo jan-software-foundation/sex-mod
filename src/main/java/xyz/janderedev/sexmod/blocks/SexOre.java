@@ -1,4 +1,4 @@
-package com.janderedev.sexmod.blocks;
+package xyz.janderedev.sexmod.blocks;
 
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.BlockState;

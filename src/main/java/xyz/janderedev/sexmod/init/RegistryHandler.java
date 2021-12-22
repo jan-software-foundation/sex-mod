@@ -1,10 +1,5 @@
-package com.janderedev.sexmod.init;
+package xyz.janderedev.sexmod.init;
 
-import com.janderedev.sexmod.SexMod;
-import com.janderedev.sexmod.blocks.SexBlock;
-import com.janderedev.sexmod.blocks.SexOre;
-import com.janderedev.sexmod.items.CBTDevice;
-import com.janderedev.sexmod.items.SexNugget;
 import net.minecraft.block.Block;
 import net.minecraft.item.*;
 import net.minecraft.util.ResourceLocation;
@@ -12,6 +7,11 @@ import net.minecraft.util.SoundEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
+import xyz.janderedev.sexmod.SexMod;
+import xyz.janderedev.sexmod.blocks.SexBlock;
+import xyz.janderedev.sexmod.blocks.SexOre;
+import xyz.janderedev.sexmod.items.CBTDevice;
+import xyz.janderedev.sexmod.items.SexNugget;
 
 public class RegistryHandler {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, SexMod.MODID);

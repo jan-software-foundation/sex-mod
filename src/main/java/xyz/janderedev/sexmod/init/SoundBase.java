@@ -1,4 +1,4 @@
-package com.janderedev.sexmod.init;
+package xyz.janderedev.sexmod.init;
 
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;

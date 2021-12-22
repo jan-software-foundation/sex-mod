@@ -1,6 +1,4 @@
-package com.janderedev.sexmod.blocks;
-
-import com.janderedev.sexmod.init.RegistryHandler;
+package xyz.janderedev.sexmod.blocks;
 
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.BlockState;
@@ -15,6 +13,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.world.World;
 import net.minecraftforge.common.ToolType;
+import xyz.janderedev.sexmod.init.RegistryHandler;
 
 import java.util.Date;
 
