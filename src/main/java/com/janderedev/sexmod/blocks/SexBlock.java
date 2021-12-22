@@ -53,9 +53,6 @@ public class SexBlock extends BlockBase {
     public ActionResultType use(BlockState state, World world, BlockPos blockPos,
                                 PlayerEntity player, Hand hand, BlockRayTraceResult hit) {
         world.playSound(player, blockPos, RegistryHandler.SOUND_NYAA, SoundCategory.BLOCKS, 1.0f, 1.0f);
-
-        ActionResultType result = ActionResultType.SUCCESS;
-        result.shouldSwing();
-        return result;
+        return ActionResultType.SUCCESS;
     }
 }
